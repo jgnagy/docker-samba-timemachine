@@ -1,5 +1,5 @@
 # docker-samba-timemachine
-This is a simple time machine docker image using samba and avahi. It's mostly based on u/KervyN's [HowTo](https://www.reddit.com/r/homelab/comments/83vkaz/howto_make_time_machine_backups_on_a_samba/) and [dperson's](https://github.com/dperson) [Samba docker container](https://github.com/dperson/samba).
+This is a simple time machine docker image using samba and avahi. It's is almost entirely based on [willtho89's](https://github.com/dperson) [docker-samba-timemachine](https://github.com/willtho89/docker-samba-timemachine), which is mostly based on u/KervyN's [HowTo](https://www.reddit.com/r/homelab/comments/83vkaz/howto_make_time_machine_backups_on_a_samba/) and [dperson's](https://github.com/dperson) [Samba docker container](https://github.com/dperson/samba).
 
 ## How to use this image?
 
@@ -16,7 +16,7 @@ docker run -d --net=host \
 Use the provided `docker-compose.yml` file and create the conainer with `docker-compose up -d`
 
 ### Environment Variables
-| Varibable | Function                | Default.    |
+| Varibable | Function                | Default     |
 | ----------|:-----------------------:|-------------:|
 | TM_CHOWN  | chown /timemachine dir? | true        |
 | TM_USER   | Time Machine User       | timemachine |
