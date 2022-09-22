@@ -1,0 +1,8 @@
+version: 1.0
+stages:
+  build:
+    image: docker:latest
+  publish:
+    image: docker:latest
+    only:
+    - main

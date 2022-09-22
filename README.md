@@ -9,7 +9,7 @@ docker run -d --net=host \
             -v /opt/timemachine:/timemachine/ \
             -e TM_USER=timemachine \
             -e TM_PW=timemachine \
-            --name=timemachine willtho/samba-timemachine
+            --name=timemachine jgnagy/samba-timemachine
 ```
 
 ### docker-compose
@@ -18,6 +18,7 @@ Use the provided `docker-compose.yml` file and create the conainer with `docker-
 ### Environment Variables
 | Varibable | Function                | Default.    |
 | ----------|:-----------------------:|-------------:|
+| TM_CHOWN  | chown /timemachine dir? | true        |
 | TM_USER   | Time Machine User       | timemachine |
 | TM_PW     | Users Password          | timemachine |
 | TM_ID     | UserID                  | 1000        |

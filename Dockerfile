@@ -1,5 +1,5 @@
 FROM alpine:latest
-MAINTAINER Thomas Willems <twillems@willtho.com>
+LABEL maintainer="Jonathan Gnagy <jonathan.gnagy@gmail.com>"
 
 RUN apk add --update \
     avahi \
