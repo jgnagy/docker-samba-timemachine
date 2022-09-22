@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t bullion:local .
+docker build -t samba-timemachine:local .
