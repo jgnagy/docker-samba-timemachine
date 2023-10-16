@@ -8,6 +8,7 @@ services:
       TM_USER: timemachine
       TM_PW: timemachine
       TM_SIZE: 512000
+      TM_INTERFACES: eth0
     volumes:
       - './timemachine:/timemachine'
       - '/etc/localtime:/etc/localtime:ro'

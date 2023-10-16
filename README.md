@@ -9,6 +9,7 @@ docker run -d --net=host \
             -v /opt/timemachine:/timemachine/ \
             -e TM_USER=timemachine \
             -e TM_PW=timemachine \
+            -e TM_INTERFACES=eth0 \
             --name=timemachine jgnagy/samba-timemachine
 ```
 
@@ -23,3 +24,4 @@ Use the provided `docker-compose.yml` file and create the conainer with `docker-
 | TM_PW     | Users Password          | timemachine |
 | TM_ID     | UserID                  | 1000        |
 | TM_SIZE   | Time Machine Size in MB | 512000      |
+| TM_INTERFACES | Interfaces to bind to | eth0 |
